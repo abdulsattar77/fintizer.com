@@ -29,7 +29,7 @@ font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol,
 
 <style>
 .custom-text-color {
-    color: peach;
+    color: tomato;
     font-size: 4rem;
 }
 .emojify {
