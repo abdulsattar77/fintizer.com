@@ -1,11 +1,12 @@
 ---
 author: "Hugo Authors"
 title: "My First Blog Post"
-date: "2023-03-03"
+date: "2023-03-01"
 description: "My first blog post using PaperMod"
 tags: ["meta"]
 ShowToc: true
 ShowBreadCrumbs: true
+draft: false
 ---
 
 <span class="custom-text-color">This is my first blog post</span>
@@ -29,7 +30,7 @@ font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol,
 
 <style>
 .custom-text-color {
-    color: peach;
+    color: tomato;
     font-size: 4rem;
 }
 .emojify {

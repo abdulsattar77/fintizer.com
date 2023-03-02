@@ -1,7 +1,7 @@
 ---
 author: "Hugo Authors"
 title: "My Second Blog Post"
-date: "2023-03-03"
+date: "2023-03-04"
 description: "My Second blog post using PaperMod"
 tags: ["meta"]
 ShowToc: false
