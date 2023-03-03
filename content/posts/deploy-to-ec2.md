@@ -52,79 +52,90 @@ The installation and enabling of HTTPd server is done in PuTTY by using Linux co
 
 ## Procedure in depth 
 
-1. AWS account setup
-    1. Visit the link shown below and create a free aws account by giving debit/credit  card and personal details 
+### 1. AWS account setup
+     Visit the link shown below and create a free aws account by giving debit/credit  card and personal details 
 
 [AWS Free Tier](https://aws.amazon.com/free/?trk=14a4002d-4936-4343-8211-b5a150ca592b&sc_channel=ps&s_kwcid=AL!4422!3!453325184782!e!!g!!aws&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)
 
 
 
-2. Launching an ec2 instance
-    1. Search for the ec2 instance in the aws 
+### 2. Launching an ec2 instance
+  Search for the ec2 instance in the aws 
 ![ec2](../../images/ec2.png)
 
-    2. Click on the instances and launch the instance 
+     Click on the instances and launch the instance 
+![ss1](../../images/ss1.png)
 
 ![launchimage.png](../../images/launchimage.png)
 
 Now give the name and select the operating system as amazon linux along with the free tier AMI 
 ![ss2](../../images/ss2.png)
-
+![ss3](../../images/ss3.png)
 Now select the CPU and ram basic free tier cpu is enough to launch this website 
-
+![ss4](../../images/ss4.png)
 Create a key pair if you don’t have one and make sure to select .ppk file 
-
+![ss5](../../images/ss5.png)
+![ss6](../../images/ss6.png)
 Once the key pair is downloaded make sure to select the file 
 
 Network settings 
-Make sure to create security group option to allow ssh from anywhere this is very important because we use this to set our inbound rules  
+Make sure to create security group option to allow ssh from anywhere this is very important because we use this to set our inbound rules 
+![ss7](../../images/ss7.png)) 
 Configure the free tier storage and finally launch the instance 
 
-3.install putty and configure the instance 
-Search the putty for windows or click on the link to download and install https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+### 3. install putty and configure the instance 
+Search the putty for windows or click on the link to download and install
+
+[install putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+
 Install the putty by reading all the terms and policies you will be seeing this type of interface 
- 
+ ![ss8](../../images/ss8.png)
 Now copy the instance public ip and paste it in the host name 
- 
+ ![ss9](../../images/ss9.png)
+ ![ss10](../../images/ss10.png)
 
  
 Now go to the ssh – auth – credentials of the putty and browse the file which you have downloaded while launching instance 
+![ss11](../../images/ss11.png)
  
 
 Go to appearance and select the font size for the terminal in putty 
 Type ec2-user in the terminal 
+![ss12](../../images/ss12.png)
 
+### 4. updating  and installing git and httpd softwares in the instance 
 
-
-
-
-
-
-4. updating  and installing git and httpd softwares in the instance 
 First of all update the instance 
- 
+![ss13](../../images/ss13.png) 
 use the following commands to install git and httpd software into the instance 
- 
+ ![ss14](../../images/ss14.png)
+ ![ss15](../../images/ss15.png)
  
 
-5.cloning the github repository of restaurant website files into html location of httpd
+### 5.cloning the github repository of restaurant website files into html location of httpd
+
 Visit the following link into the browser 
-https://github.com/YaninaTrekhleb/restaurant-website
+[github website repository](https://github.com/YaninaTrekhleb/restaurant-website)
 you will be directed to the github repository 
- 
+ ![ss16](../../images/ss16.png)
 This repository contains the html and css files along with images of the restaurant website it is publicly available we can use it 
 Copy the http link of this 
-Now go to the terminal start the httpd and remove all file from this location var/www/html/.git  
+Now go to the terminal start the httpd and remove all file from this location var/www/html/.git
+![ss17](../../images/ss17.png)  
 Now clone the repository to the var/www/html/.git to this location 
- 
+ ![ss18](../../images/ss18.png)
 
-6.configure the security group
+### 6.configure the security group
+
 Go to the aws console and search security group and edit the inbound rules to access the website from anywhere
 Select the security group name in which our instance is present
+![ss19](../../images/ss19.png)
   
 Select the all ipv4 traffic and select all ports
-7.copy the public ip of the instance and cross check the website 
 
-Conclusion 
+### 7.copy the public ip of the instance and cross check the website 
+
+## Conclusion 
+
 With this mini project one can understand how a website can be deployed manually using aws services .  
 
