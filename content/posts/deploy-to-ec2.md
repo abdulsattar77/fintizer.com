@@ -68,7 +68,7 @@ The installation and enabling of HTTPd server is done in PuTTY by using Linux co
 ![launchimage.png](../../images/launchimage.png)
 
 Now give the name and select the operating system as amazon linux along with the free tier AMI 
-![ss2](../images/ss2.png)
+![ss2](../../images/ss2.png)
 
 Now select the CPU and ram basic free tier cpu is enough to launch this website 
 
