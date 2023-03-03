@@ -57,15 +57,18 @@ The installation and enabling of HTTPd server is done in PuTTY by using Linux co
 
 [AWS Free Tier](https://aws.amazon.com/free/?trk=14a4002d-4936-4343-8211-b5a150ca592b&sc_channel=ps&s_kwcid=AL!4422!3!453325184782!e!!g!!aws&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all)
 
-![ec2](../../images/ec2.png)
+
 
 2. Launching an ec2 instance
     1. Search for the ec2 instance in the aws 
+![ec2](../../images/ec2.png)
+
     2. Click on the instances and launch the instance 
 
 ![launchimage.png](../../images/launchimage.png)
 
 Now give the name and select the operating system as amazon linux along with the free tier AMI 
+![ss2](../images/ss2.png)
 
 Now select the CPU and ram basic free tier cpu is enough to launch this website 
 
